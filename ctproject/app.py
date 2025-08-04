@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 #import plotly.figure_factory as ff
-import plotly.express as px
+#import plotly.express as px
 #import matplotlib.pyplot as plt
 
 st.set_page_config(layout='wide', page_title='My app')
@@ -43,8 +43,8 @@ with col1:
         st.table(df)    
         #dff=df.groupby(by='name').sum()
         #st.table(dff)
-        dff=px.bar(df, x='name', y='kor', title='KoreanScores')
-        st.plotly_chart(dff)
+        #dff=px.bar(df, x='name', y='kor', title='KoreanScores')
+        #st.plotly_chart(dff)
         
     with st.expander('Content3...'):
         st.subheader('Content3...')
